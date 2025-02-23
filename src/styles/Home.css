@@ -1,0 +1,215 @@
+.home-container {
+    scroll-behavior: smooth;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.section1 {
+    background-image: url("../img/home1.png");
+}
+.section2 {
+    background-image: url("../img/home2.png");
+}.section3 {
+    background: #ffffff;
+}.section4 {
+    background-image: url("../img/home3.png");
+}.section5 {
+    background-image: url("../img/home4.png");
+}
+
+.header {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.header > * {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    color: #424f77;
+}
+
+.headerLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #424f77;
+    font-size: 18px;
+}
+
+.headerLinks a {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #424f77;
+}
+
+.headerLinks a:hover {
+    color: #4eb683;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login button {
+    background-color: #4eb683;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 35px;
+    width: 100px;
+}
+
+.section1-body, .section2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+    text-align: left; 
+    padding-left: 10%;
+}
+
+.section1-body .sec1 {
+    color: #4eb683;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.section1-body h1 {
+    font-size: 50px;
+    max-width: 35%;
+    margin: 0;
+}
+
+.section1-body .sec2 {
+    font-size: 16px;
+    font-weight: 100;
+    color: #424f77;
+    max-width: 30%;
+}
+
+.sec1-btn1, .sec1-btn2 {
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+}
+
+.sec1-buttons .sec1-btn1, .sec1-buttons .sec1-btn2:hover {
+    border: 1px solid #4eb683;
+    background-color: #4eb683;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.sec1-buttons .sec1-btn2, .sec1-btn1:hover, .login button:hover {
+    border: 1px solid #4eb683;
+    color: #4eb683;
+    background: transparent;
+}
+
+.login button:hover, .sec1-buttons button:hover {
+    cursor: pointer;
+}
+
+.section2 .section2-head h1{
+    color: #4eb683;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.section2 .section2-head p {
+    color: #424f77;
+    font-size: 18px;
+    width: 55%;
+}
+
+.section2 .section2-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.section2 .section2-body .box {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #cdf5fd;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+
+    .section {
+        height: 100vh;
+        display: flex;
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+
+    /* Adjust header layout for smaller screens */
+    .header {
+        flex-direction: row; /* Stack items vertically */
+        height: 10%;
+        align-items: center;
+    }
+
+    .header > * {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .Logo {
+        font-size: 20px;
+    }
+
+    .headerLinks {
+        flex-direction: row; /* Stack links vertically */
+        font-size: 14px;
+    }
+
+    .headerLinks p {
+        padding: 8px 15px;
+    }
+
+    .login button {
+        width: 80%; /* Make button more responsive on small screens */
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo {
+        font-size: 18px; /* Reduce logo size on very small screens */
+    }
+
+    .headerLinks p {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .login button {
+        width: 90%; /* Button takes up more space */
+    }
+}
