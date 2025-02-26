@@ -188,7 +188,9 @@ const Home = () => {
                 </div>
             </section>
             
-            <section id="contact" className="section section5"></section>
+            <section id="contact" className="section section5">
+                <h1></h1>
+            </section>
 
         </div>
     )
