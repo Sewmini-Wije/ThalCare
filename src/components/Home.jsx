@@ -189,6 +189,7 @@ const Home = () => {
             </section>
             
             <section id="contact" className="section section5">
+                <p>Newsletter</p>
                 <h1></h1>
             </section>
 
