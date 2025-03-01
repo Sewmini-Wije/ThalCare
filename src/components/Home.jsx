@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../styles/Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeartbeat, faStethoscope, faNotesMedical } from "@fortawesome/free-solid-svg-icons";
+import { faHeartbeat, faStethoscope, faNotesMedical, faPhone, faMapLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import article1 from "../img/article1.jpeg";
 import article2 from "../img/article2.jpeg";
 import article3 from "../img/article3.jpeg";
@@ -217,7 +218,7 @@ const Home = () => {
                                     <td>About Us</td>
                                     <td>Business marketing</td>
                                     <td>IOS & Android</td>
-                                    <td>(480) 555-0103</td>
+                                    <td> <FontAwesomeIcon icon={faPhone} className="footer2-icons" />  (480) 555-0103</td>
                                 </tr>
  
                                 <tr>
@@ -225,7 +226,7 @@ const Home = () => {
                                     <td>Career</td>
                                     <td>User Analytic</td>
                                     <td>Watch & Demo</td>
-                                    <td>4517 Washington Ave, Manchester, Kentucky 39495</td>
+                                    <td> <FontAwesomeIcon icon={faMapLocationDot} className="footer2-icons" />  4517 Washington Ave, Manchester, Kentucky 39495</td>
                                 </tr>
 
                                 <tr>
@@ -233,7 +234,7 @@ const Home = () => {
                                     <td>We are hirirng</td>
                                     <td>Live Chat</td>
                                     <td>Customers</td>
-                                    <td>debra.hoit@example.com</td>
+                                    <td> <FontAwesomeIcon icon={faEnvelope} className="footer2-icons" />  debra.hoit@example.com</td>
                                 </tr>
 
                                 <tr>
@@ -247,8 +248,10 @@ const Home = () => {
                     </div>
                     <div className="footer2">
                         <p>ThalCare All Right Reserved</p> 
-                        <div className="footer2-img">
-
+                        <div>
+                            <FontAwesomeIcon icon={faFacebook} className="footer2-img" />
+                            <FontAwesomeIcon icon={faInstagram} className="footer2-img" />
+                            <FontAwesomeIcon icon={faTwitter} className="footer2-img" />
                         </div>
                     </div>
                 </div>
