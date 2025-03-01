@@ -141,7 +141,7 @@ const Home = () => {
                 </div>
             </section>
             
-            <section className="section section3">
+            <section id="article" className="section section3">
                 <div className="section3-head">
                     <h1>Articles</h1>
                     <p> 
@@ -189,8 +189,69 @@ const Home = () => {
             </section>
             
             <section id="contact" className="section section5">
-                <p>Newsletter</p>
-                <h1></h1>
+                <div className="section5-head">
+                    <p className="sec5-p1">Newsletter</p>
+                    <h1>JOIN US</h1>
+                    <p className="sec5-p2">Problem trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+
+                    <div className="subscribe">
+                        <input type="email" placeholder="Your Email" />
+                        <button className="sub-btn">Subscribe</button>
+                    </div>
+                </div>
+                <div className="section5-footer">
+                    <div className="footer1">
+                    <table>
+                            <thead>
+                                <tr>
+                                    <th>Company Info</th>
+                                    <th>Legal</th>
+                                    <th>Features</th>
+                                    <th>Resources</th>
+                                    <th>Get in Touch</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>About Us</td>
+                                    <td>About Us</td>
+                                    <td>Business marketing</td>
+                                    <td>IOS & Android</td>
+                                    <td>(480) 555-0103</td>
+                                </tr>
+ 
+                                <tr>
+                                    <td>Career</td>
+                                    <td>Career</td>
+                                    <td>User Analytic</td>
+                                    <td>Watch & Demo</td>
+                                    <td>4517 Washington Ave, Manchester, Kentucky 39495</td>
+                                </tr>
+
+                                <tr>
+                                    <td>We are hirirng</td>
+                                    <td>We are hirirng</td>
+                                    <td>Live Chat</td>
+                                    <td>Customers</td>
+                                    <td>debra.hoit@example.com</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Blog</td>
+                                    <td>Blog</td>
+                                    <td>Unlimited Support</td>
+                                    <td>API</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="footer2">
+                        <p>ThalCare All Right Reserved</p> 
+                        <div className="footer2-img">
+
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </div>
