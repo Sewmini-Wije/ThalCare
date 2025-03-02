@@ -10,6 +10,7 @@ import article4 from "../img/article4.jpeg";
 import docProfile1 from "../img/docProfile1.jpg";
 import docProfile2 from "../img/docProfile2.jpg";
 import docProfile3 from "../img/docProfile3.jpg";
+import { Link } from "react-router-dom";
 
 const articles = [
     { id: 1, image: article1 },
@@ -98,7 +99,7 @@ const Home = () => {
                     </div>
 
                     <div className="login">
-                        <button type="button">Login</button>
+                        <Link to={'/Login'}><button type="button" >Login</button></Link>
                     </div>
                 </div>
 
@@ -258,6 +259,6 @@ const Home = () => {
             </section>
 
         </div>
-    )
-}
-export default Home
+    );
+};
+export default Home;
