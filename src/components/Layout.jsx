@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "../styles/Layout.css";
 import { faBell, faDashboard, faArrowRotateBack } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,12 +24,16 @@ const Layout = () => {
                         </li>
 
                         <li className="py-2 nav-link">
-                            <FontAwesomeIcon icon={faDashboard} />
-                            <Link to="/dashboard">Dashboard</Link>
+                            {/* <Link to="/dashboard">Dashboard</Link> */}
+                            <NavLink to="/dashboard" className={({isActive}) => isActive ? "nav-link active" : "nav-link"} >
+                                <FontAwesomeIcon icon={faDashboard} />
+                                <span>Dashboard</span>
+                            </NavLink>
                         </li>
                         <li className="py-2 nav-link">
                             <FontAwesomeIcon icon={faArrowRotateBack} />
-                            <Link to="/">Logout</Link>
+                            {/* <Link to="/">Logout</Link> */}
+                            <NavLink to="/" className={({isActive}) => isActive ? "nav-link active" : "nav-link"} >Logout</NavLink>
                         </li>
                     </ul>
                 </nav>
