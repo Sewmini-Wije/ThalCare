@@ -6,7 +6,7 @@ import docProfile1 from "../img/docProfile1.jpg";
 
 const user = {
     name: "John Doe",
-    profilePic: docProfile1 // Replace with real user image URL
+    profilePic: docProfile1 
 };
 
 const Layout = () => {
@@ -23,16 +23,14 @@ const Layout = () => {
                             <p className="user-name"> {user.name} </p>
                         </li>
 
-                        <li className="py-2 nav-link">
-                            {/* <Link to="/dashboard">Dashboard</Link> */}
-                            <NavLink to="/dashboard" className={({isActive}) => isActive ? "nav-link active" : "nav-link"} >
+                        <li className="py-2">
+                            <NavLink to="/dashboard" className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
                                 <FontAwesomeIcon icon={faDashboard} />
                                 <span>Dashboard</span>
                             </NavLink>
                         </li>
                         <li className="py-2 nav-link">
                             <FontAwesomeIcon icon={faArrowRotateBack} />
-                            {/* <Link to="/">Logout</Link> */}
                             <NavLink to="/" className={({isActive}) => isActive ? "nav-link active" : "nav-link"} >Logout</NavLink>
                         </li>
                     </ul>
