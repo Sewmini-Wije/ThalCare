@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "../styles/Layout.css";
-import { faBell, faDashboard, faArrowRotateBack } from "@fortawesome/free-solid-svg-icons";
+import { faBell, faDashboard, faUserGroup, faArrowRotateBack } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import docProfile1 from "../img/docProfile1.jpg";
 
@@ -25,13 +25,21 @@ const Layout = () => {
 
                         <li className="py-2">
                             <NavLink to="/dashboard" className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
-                                <FontAwesomeIcon icon={faDashboard} />
-                                <span>Dashboard</span>
+                                <FontAwesomeIcon icon={faDashboard} className="nav-icon" />
+                                Dashboard
                             </NavLink>
                         </li>
-                        <li className="py-2 nav-link">
-                            <FontAwesomeIcon icon={faArrowRotateBack} />
-                            <NavLink to="/" className={({isActive}) => isActive ? "nav-link active" : "nav-link"} >Logout</NavLink>
+                        <li className="py-2">
+                            <NavLink to="/patient_details" className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
+                                <FontAwesomeIcon icon={faUserGroup} className="nav-icon" />
+                                Patient Details
+                            </NavLink>
+                        </li>
+                        <li className="py-2">
+                            <NavLink to="/" className={({isActive}) => isActive ? "nav-link active" : "nav-link"} >
+                                <FontAwesomeIcon icon={faArrowRotateBack} className="nav-icon" />
+                                Logout
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
