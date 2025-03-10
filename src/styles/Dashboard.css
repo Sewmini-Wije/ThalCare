@@ -1,5 +1,5 @@
 .dashboard-container {
-    height: 100%;
+    height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,28 +16,59 @@
     flex-direction: row;
 }
 
-.dash-section1 {
-    justify-content: space-between;
+.dash1 {
+    width: 30%;
+    height: 85px;
+    margin: 0 20px 5px 0;
+    border: 2px solid #114964;
+    display: flex;
+    flex-direction: column;
 }
 
-.dash1 {
-    width: 25%;
-    height: 60px;
-    margin: 5px 20px 5px 20px;
+.dash1-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dash1-container .amount {
+    width: 50%;
+    font-size: 3.0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dash1-container .amount-desc {
+    width: 50%;
+    text-align: right;
+    margin: 30px 15px 0 0;
+}
+
+.dash1 p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    color: #3c9767;
+    font-size: 0.8em;
+    margin: 0 20px 30px 0;
 }
 
 .dash-section2, .dash-section3 {
     height: 40%;
-    margin: 10px;
+    margin: 5px;
     padding-left: 10px;
 }
 
 .lineChart {
-    flex: 1;
-    height: 100%;
+    height: 300px;
     width: 70%;
     display: flex;
     flex-direction: column;
+    overflow: hidden; 
+    align-items: center;
 }
 
 .lineChart h4 {
@@ -57,7 +88,7 @@
 .line-color {
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    gap: 0 5px;
 }
 
 .line-color1, .line-color2, .line-color3 {
@@ -65,6 +96,15 @@
     width: 15px;
     border-radius: 50%;
     margin: 5px 10px;
+}
+
+.lineGraph {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .line-color1 { background-color: green; }
@@ -75,4 +115,80 @@
     height: 100%;
     width: 30%;
     border-left: 0.5px solid #114964;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.pieChart h4 {
+    margin: 0;
+    text-align: center; 
+}
+
+.pieChart-container {
+    height: 40%;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.pieChart-decs {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.pieChart-decs tr {
+    font-size: 0.8em;
+    width: 100%;
+    text-align: left;
+}
+
+.pieChart-decs .color {
+    width: 30px;
+    border-radius: 2;
+    margin: 0;
+}
+
+.pieChart-decs .count {
+    padding-left: 30px;
+    font-size: 0.8em;
+}
+
+.dash-section3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-section3 .areaChart-container {
+    flex: 2;
+    width: 100%;
+    height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .dash1 {
+        width: 100%;
+    }
+    
+    .lineChart, .pieChart, .areaChart-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .amount {
+        font-size: 1.5em;
+    }
+    
+    .amount-desc {
+        font-size: 0.9em;
+    }
+    
+    .dash1 p {
+        font-size: 0.8em;
+    }
 }
