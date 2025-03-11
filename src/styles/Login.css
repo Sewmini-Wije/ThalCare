@@ -1,0 +1,115 @@
+.container {
+    background-image: url(../img/login_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    position: absolute;
+    width: 300px;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #2a3251;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-container1, .login-container2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container1 {
+    font-family: Georgia, serif;
+}
+
+.txt-login {
+    width: 40%;
+    text-align: center;
+}
+
+.txt-login h1 {
+    color: #2a3251;
+}
+
+.login-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-content {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-ct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-content .lg-content {
+    margin: 30px 0;
+}
+
+.login-content h1 {
+    color: #50b484;
+    font-family: Georgia, serif;
+    font-weight: 300;
+}
+
+.lg-content input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #50b484;
+    border-radius: 8px;
+}
+
+.lg-content .login-label {
+    color: #50b484;
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+.pw-content a {
+    color: #50b484;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.pw-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-container2 button {
+    display: block;
+    margin: 20px auto; 
+    border: none;
+    background-color: #50b484;
+    color: #fff;
+    width: 300px;
+    padding: 8px 35px;
+    border-radius: 5px;
+}
