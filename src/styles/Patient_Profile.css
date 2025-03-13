@@ -1,0 +1,269 @@
+.pp-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;overflow: hidden;
+}
+
+ .pp-top {
+    height: 15%;
+    width: 100%;
+}
+
+ .pp-middle {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.pp-mid-one {
+    height: 90%;
+    border-radius: 30px;
+    border: 5px dotted #3c9767;
+    margin: 20px;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.pp-mid-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    border-radius: 30px;    
+    border: 5px dotted #3c9767;
+    margin: 20px;
+    gap: 10px;
+}
+
+.pp-bottom {
+    height: 30%;
+    width: 95%;
+    border-radius: 10px;
+    border-radius: 30px;    
+    border: 5px dotted #3c9767;
+    margin: 20px;
+}
+
+.ng-prof {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-data-two {
+    width: 200px;
+}
+
+.profile-data-two button {
+    border: ipx solid #3c9767;
+    background-color: #3c9767;
+    color: #fff;
+    font-size: 0.7em;
+    border-radius: 5px;
+    padding: 8px 10px;
+    border: none;
+}
+
+.profile-data-two button:hover {
+    border: 1px solid #3c9767;
+    color: #3c9767;
+    background-color: #fff;
+}
+
+.profile-data {
+    height: 50%;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 50px;
+}
+
+.profile-data .p-data {
+    gap: 0;
+}
+
+.profile-data h2 {
+    flex: 1;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.7em;
+}
+
+.profile-data p {
+    margin-top: -10px;
+    flex: 2;
+    font-size: 1.2em;
+    color: green;
+}
+
+.pro-pic {
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.pp-mid-one h2, .pp-bottom h2 {
+    margin-left: 20px;
+    font-size: 1.3em;
+    color: #114964;
+}
+
+.pp-mid-two h2 {
+    color: #114964;
+    font-size: 1.3em;
+}
+
+.input-container {
+    position: relative;
+    width: 350px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    color: gray;
+    font-size: 16px;
+  }
+  
+  .input-container input:focus + label,
+  .input-container input:valid + label {
+    top: 0;
+    font-size: 12px;
+  }
+  
+  .textarea-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .textarea-container textarea {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+  }
+  
+  .textarea-container label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    background: white;
+    padding: 0 5px;
+    transition: 0.3s;
+    color: gray;
+    font-size: 16px;
+  }
+  
+  .textarea-container textarea:focus + label,
+  .textarea-container textarea:valid + label {
+    top: -10px;
+    font-size: 12px;
+  }
+  
+  .pp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.pp-table th, .pp-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.pp-table th {
+    background-color: #5ca98c;
+    color: white;
+}
+
+.pp-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.pp-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.pp-icon {
+    cursor: pointer;
+    color: #5ca98c;
+    transition: color 0.3s;
+}
+
+.pp-icon:hover {
+    color: #3a6f5c;
+}
+
+.file-icon {
+    margin-right: 20px;
+}
+
+.pd-paginator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+.pag-btn {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .pag-btn:hover {
+    cursor: pointer;
+    background-color: #5ca98c; 
+    color: white;
+    border-radius: 50%;
+    padding: 8px 12px;
+  }
+  
+  .active-page {
+    background-color: #5ca98c; 
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 8px 12px;
+  }
+  
+  .pd-paginator button {
+    border: none;
+    background: transparent;
+  }
+
+  .pd-paginator button:hover {
+    background-color: #3c9767;
+    border-radius: 50%;
+  }
