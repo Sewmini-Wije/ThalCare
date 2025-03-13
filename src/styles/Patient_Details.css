@@ -1,4 +1,200 @@
 .patient-det-container {
-    height: 100%;
-    width: 100vw;
+    height: 87vh;
+    width: 99%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.pd-header {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pd-header .pd-search {
+    width: 45%;
+}
+
+.pd-search input {
+    width: 70%;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid #c1c0c0;
+    padding-left: 10px;
+}
+
+.pd-header .pd-add-btn {
+    width: 35%;
+}
+
+.pd-add-btn button {
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #d0eee1;
+    border: 2px solid #7abc9c;
+}
+
+.pd-header .pd-recent-dropdown {
+    width: 10%;
+}
+
+.pd-recent-dropdown select {
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #d0eee1;
+    border: 2px solid #7abc9c;
+}
+
+.pd-add-btn button:hover {
+    cursor: pointer;
+    appearance: none; 
+}
+
+.pd-recent-dropdown select:focus {
+    outline: none;
+    border-color: #5ca98c; 
+}
+
+.pd-recent-dropdown select option:checked {
+    background-color: #5ca98c;
+    color: white
+}
+
+.pd-recent-dropdown select option:hover {
+    background-color: #5ca98c;
+    color: white;
+}
+
+.pd-table {
+    flex: 2;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pd-table table {
+    height: 80%;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.pd-table table th {
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.pd-table table td {
+    font-size: 0.9em;
+    border-bottom: 2px solid rgb(181, 181, 181);
+}
+
+.profile-img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.delete-icon {
+    color: rgb(181, 39, 39);
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.edit-icon {
+    color: blue;
+    padding: 5px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.pd-paginator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+.pag-btn {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .pag-btn:hover {
+    cursor: pointer;
+    background-color: #5ca98c; 
+    color: white;
+    border-radius: 50%;
+    padding: 8px 12px;
+  }
+  
+  .active-page {
+    background-color: #5ca98c; 
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 8px 12px;
+  }
+  
+
+  @media (max-width: 1024px) { /* Tablets */
+    .pd-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pd-header .pd-search,
+    .pd-header .pd-add-btn,
+    .pd-header .pd-recent-dropdown {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .pd-table {
+        overflow-x: auto;
+    }
+
+    .pd-paginator {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .patient-det-container {
+        padding: 10px;
+    }
+
+    .pd-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pd-table table {
+        min-width: 500px;
+    }
+
+    .pd-paginator {
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
